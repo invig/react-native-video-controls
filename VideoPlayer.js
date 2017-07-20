@@ -1022,7 +1022,7 @@ export default class VideoPlayer extends Component {
                     <Video
                         ref={ videoPlayer => this.player.ref = videoPlayer }
 
-                        poster={this.props.poster}
+                        posterImage={this.props.posterImage}
 
                         resizeMode={ this.state.resizeMode }
                         volume={ this.state.volume }
