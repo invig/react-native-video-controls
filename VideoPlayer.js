@@ -146,7 +146,7 @@ export default class VideoPlayer extends Component {
     _onLoadStart() {
         let state = this.state;
         state.loading = true;
-        this.loadAnimation();
+        // this.loadAnimation();
         this.setState( state );
     }
 
@@ -354,7 +354,7 @@ export default class VideoPlayer extends Component {
     _hideControls() {
         let state = this.state;
         state.showControls = false;
-        this.hideControlAnimation();
+        // this.hideControlAnimation();
 
         this.setState( state );
     }
@@ -368,11 +368,11 @@ export default class VideoPlayer extends Component {
         state.showControls = ! state.showControls;
 
         if ( state.showControls ) {
-            this.showControlAnimation();
+            // this.showControlAnimation();
             this.setControlTimeout();
         }
         else {
-            this.hideControlAnimation();
+            // this.hideControlAnimation();
             this.clearControlTimeout();
         }
 
